@@ -62,3 +62,16 @@ function validaDuplicados(nombre){
         return true;
     }
 }
+/**
+ * Escoje de manera aleatoria un nombre de la lista siempre que sea mayor a uno el tamaño.
+ * @returns No devuleve nada.
+ */
+function sortearAmigo(){
+    console.log("sorteo");
+    const tamanio = listaNombres.length;
+    if (tamanio > 1) {
+        const resultado = document.getElementById("resultado");
+        resultado.innerHTML += `<li>${listaNombres[Math.floor(Math.random()*(tamanio))]}</li>`;
+        return;
+    }    
+}
