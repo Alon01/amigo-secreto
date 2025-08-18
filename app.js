@@ -1,5 +1,9 @@
 let listaNombres = [];
 
+/**
+ * Hace el evento de tomar el valor de una caja de texto y validarle que sea o no un String valido.
+ * @returns No devulelve nada.
+ */
 function agregarAmigo(){
     let aux = document.getElementById('amigo');
     let nombre = aux.value;
@@ -15,6 +19,11 @@ function agregarAmigo(){
     return;
 }
 
+/**
+ * Valida que sea un string y no solo espacios o un vacio.
+ * @param {String} nombre 
+ * @returns Devuelve un true o false según sea el caso.
+ */
 function validaNombre(nombre){
     //let n = nombre.trim();
     console.log(`Dato en validación "${nombre}"`);
